@@ -1,0 +1,112 @@
+<!--
+Create a registration form. The form should have the following fields:
+* Email
+* Password
+* Name and Lastname
+* Date of birth
+* Telephone number
+* A select for choosing plans: free plan, a group of 3 plans with increasing price, and a checkbox for a Pro Plan
+* Credit card number
+* CVC
+* Expiration date
+* Billing Address
+-->
+
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <form>
+
+      <h4>Personal Information</h4>
+
+          <label for="email">Email:</label>
+          <input type="email" name="email"/>
+
+          <label for="password">Password:</label>
+          <input type="password" name="password"/>
+
+          <label for="name">Name:</label>
+          <input type="text" name="name"/>
+
+          <label for="last_name">Last name:</label>
+          <input type="text" name="last_name"/>
+
+          <label for="date_of_birth">Date of Birth:</label>
+          <input type="date" name="date_of_birth"  />
+
+          <label for="telephone_number">Telephone number:</label>
+          <input type="text" name="telephone_number" maxlength="10"  />
+        
+          <h4>Choosing Plan:</h4>
+          <label for="plan">Free Version</label>
+          <input type="radio" name="plan" />
+
+          <label for="plan">4,99$</label>
+          <input type="radio" name="plan" />
+
+          <label for="plan">6,99$</label>
+          <input type="radio" name="plan" />
+
+          <label for="plan">8,99$</label>
+          <input type="radio" name="plan" />
+
+          <label for="pro_version">Pro Version +1,99$</label>
+          <input type="checkbox" />
+        
+
+        
+          <h4>Payment Information</h4>
+          <label for="credit_card_number">Credit card number</label>
+          <input type="number" size="16" name="credit_card_number" />
+
+          <label for="cvc">CVC</label>
+          <input type="number" name="cvc" />
+
+          <label for="expiration_date">Expiration date</label>
+          <input type="date" name="expiration_date" />
+        
+
+        
+          <h4>Billing Address</h4>
+
+          <label for="stato">Stato</label>
+          <input type="text" name="stato" onclick="FileList" />
+
+          <label for="provincia">Provincia</label>
+          <input type="text" name="provincia" id="" />
+
+          <label for="cap">Cap</label>
+          <input type="text" name="cap" />
+
+          <label for="indirizzo">Indirizzo</label>
+          <input type="text" name="indirizzo" />
+
+          <label for="indirizzo2">Indirizzo Secondario</label>
+          <input type="text" name="indirizzo2" />
+    
+        
+        <label for="bottone"></label>
+        <input type="button" name="bottone" value="submit"
+      
+
+    </form>
+
+  </body>
+
+</html>
